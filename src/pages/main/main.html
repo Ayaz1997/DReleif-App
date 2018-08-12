@@ -1,0 +1,24 @@
+<ion-content class="LoginScreen" padding style="text-align: center;">
+
+
+  <ion-list style="margin-top:95%;">
+    <ion-item>
+      <ion-label  floating style="color:black;text-shadow:0px;">Username</ion-label>
+      <ion-input type="text" value="Login" [(ngModel)]="username" required></ion-input>
+    </ion-item>
+    <ion-item style="margin-left:16px;padding-left:0px;width:96%;">
+      <ion-label floating style="color:black;text-shadow:0px;">Password</ion-label>
+      <ion-input type="password" value="password" [(ngModel)]="password" required></ion-input>
+    </ion-item>
+  
+  
+  </ion-list>
+  <div padding>
+    <button ion-button style="background: #0575E6;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #FF7E9D, #FF907C);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #FF7E9D, #FF907C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      " (click)="login();">Sign In</button>
+  </div>
+  
+  </ion-content>
+  

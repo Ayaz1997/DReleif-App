@@ -1,0 +1,36 @@
+<ion-content>
+  <ion-slides pager (ionSlideDidChange)="slideChanged()">
+
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <img class="funds" src="assets/img/manage.png"/>
+            </div>
+      <div>
+        <h2>The Disaster Releif App</h2>
+          <p>Whether it's cyclone, flood, or heavy rains. You can track it all with our intuitive interface.</p>
+        </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <img class="funds" src="assets/img/money.png"/>
+            </div>
+      <div>
+        <h2>Manage funds easily</h2>
+          <p>Request, transfer or receive funds easily for disaster management.</p>
+        </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <img class="funds" src="assets/img/track.png"/>
+            </div>
+      <div>
+        <h2>Track Relief</h2>
+          <p>Track releif and deliverables efficiently and reach to the correct peoples.</p>
+        </div>
+    </ion-slide>
+
+  <button (click)="skip()" id="skip">{{ skipMsg }}</button>
+  </ion-slides>
+</ion-content>
